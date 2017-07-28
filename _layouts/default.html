@@ -3,18 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<title>Planets of the Universe</title>
+	<link href="{{site.baseurl}}/css/common.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<header> 
 		<h1> Planets of The Universe </h1>
-		<nav>
-			<ul>
-				<li><a href="{{site.baseurl}}/index.html">Home </a> </li>
-				<li><a href="{{site.baseurl}}/news.html">News </a> </li>
-			</ul>
-		</nav>
+		{%include nav.html navclass='nav-top'%}
 	</header>
 	{{content}}
 
+	<footer>
+	{%include nav.html navclass='nav-botttom'%}
+	<p> 2013 Planets of the Universe </p>
+	</footer>
 </body>
 </html>
